@@ -9,7 +9,6 @@ void solve()
    map<int,int>f;
    for(int i=1;i<=n;i++)cin>>a[i],b[i]=a[i],p[i]=0,q[i]=0,f[a[i]]++;
    sort(b+1,b+n+1);
-   
    for(int i=1;i<=n;i++)
    {
       if(b[i]<i||f[b[i]]>2)
