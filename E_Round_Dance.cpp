@@ -58,9 +58,7 @@ void solve()
                     flag=false;
                     break;
                 }
-                //cout<<graph[vec[i]].size()<<" ";
             }
-            //cout<<endl;
             if(flag)com++;
         }
     }
