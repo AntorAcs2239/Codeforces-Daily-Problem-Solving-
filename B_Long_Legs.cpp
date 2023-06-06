@@ -14,7 +14,6 @@ void solve()
         ans=min(ans,z);
     }
     cout<<ans<<endl;
-
 }
 int main()
 {
