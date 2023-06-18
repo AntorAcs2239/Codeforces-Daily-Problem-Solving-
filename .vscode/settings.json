@@ -36,7 +36,8 @@
   "C_Cpp_Runner.useAddressSanitizer": false,
   "files.associations": {
     "*.cpp": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "iostream": "cpp"
   },
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp.errorSquiggles": "disabled",
