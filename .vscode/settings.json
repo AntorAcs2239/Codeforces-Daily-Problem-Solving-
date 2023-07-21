@@ -37,7 +37,8 @@
   "files.associations": {
     "*.cpp": "cpp",
     "random": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "cmath": "cpp"
   },
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp.errorSquiggles": "disabled",
