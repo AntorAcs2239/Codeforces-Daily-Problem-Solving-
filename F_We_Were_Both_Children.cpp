@@ -6,11 +6,16 @@ void solve()
     int n;
     cin>>n;
     ll ar[n];
-    for(int i=0;i<n;i++)cin>>ar[i];
-    unordered_map<ll,ll>mp;
-
-    sort(ar,ar+n);
-    for(int i=0;i<n;i++)mp[ar[i]]++;
+    int mp[n+5];
+    for(int i=1;i<=n;i++)mp[i]=0;
+    for(int i=0;i<n;i++)
+    {
+        cin>>ar[i];
+        if(ar[i]<=n)
+        {
+            mp[ar[i]]++;
+        }
+    }
     int idx=n;
     int ans=0;
     for(int i=n;i>=1;i--)
