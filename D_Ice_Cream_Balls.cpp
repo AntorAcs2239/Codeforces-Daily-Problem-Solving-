@@ -12,8 +12,6 @@ ll s(ll n)
     {
         ans=((n-1)/2)*n;
     }
-
-
     return ans;
 }
 void solve()
