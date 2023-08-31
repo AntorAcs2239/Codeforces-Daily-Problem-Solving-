@@ -1,19 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long int
-ll s(ll n)
-{
-    ll ans = 1;
-    if (n % 2 == 0)
-    {
-        ans = (n / 2) * (n - 1);
-    }
-    else
-    {
-        ans = ((n - 1) / 2) * n;
-    }
-    return ans;
-}
 void solve()
 {
     ll n;
