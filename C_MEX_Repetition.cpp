@@ -13,7 +13,7 @@ void solve()
         mp[ar[i]] = 1;
     }
     int mx;
-    for (int i = 0; i <=n; i++)
+    for (int i = 0; i <= n; i++)
     {
         if (mp[i] == 0)
         {

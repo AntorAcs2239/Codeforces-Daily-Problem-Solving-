@@ -4,37 +4,36 @@ using namespace std;
 void solve()
 {
     ll n;
-    cin>>n;
-    ll t=log2(n);
-    ll x=pow(2,t);
-    ll tx=n-x;
-    vector<int>vec;
+    cin >> n;
+    ll t = log2(n);
+    ll x = pow(2, t);
+    ll tx = n - x;
+    vector<int> vec;
     vec.push_back(n);
-    ll i=0;
-    while (tx>0)
+    ll i = 0;
+    while (tx > 0)
     {
-       if(tx%2)
-       {
-          ll a=pow(2,i);
-          n-=a;
-          vec.push_back(n);
-       }
-       i++;
-       tx=tx/2;
+        if (tx % 2)
+        {
+            ll a = pow(2, i);
+            n -= a;
+            vec.push_back(n);
+        }
+        i++;
+        tx = tx / 2;
     }
-    while(x>0)
+    while (x > 0)
     {
-        x=x/2;
-        if(x>0)
-        vec.push_back(x);
+        x = x / 2;
+        if (x > 0)
+            vec.push_back(x);
     }
-    cout<<vec.size()<<endl;
-    for(int i=0;i<vec.size();i++)
+    cout << vec.size() << endl;
+    for (int i = 0; i < vec.size(); i++)
     {
-        cout<<vec[i]<<" ";
+        cout << vec[i] << " ";
     }
-    cout<<endl;
-    
+    cout << endl;
 }
 int main()
 {

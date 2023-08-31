@@ -11,81 +11,85 @@ void solve()
         for (int j = 0; j < m; j++)
             cin >> ar[i][j];
     }
-    for(int j=0;j<m;j++)
+    for (int j = 0; j < m; j++)
     {
-        int x=0;
-        for(int i=0;i<n;i++)
+        int x = 0;
+        for (int i = 0; i < n; i++)
         {
-            if(ar[i][j]=='L')
+            if (ar[i][j] == 'L')
             {
-                if(x%2==0)
+                if (x % 2 == 0)
                 {
-                    ar[i][j]='W';
-                    ar[i][j+1]='B';
+                    ar[i][j] = 'W';
+                    ar[i][j + 1] = 'B';
                 }
-                else 
+                else
                 {
-                    ar[i][j]='B';
-                    ar[i][j+1]='W';
+                    ar[i][j] = 'B';
+                    ar[i][j + 1] = 'W';
                 }
                 x++;
             }
         }
     }
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-        int x=0;
-        for(int j=0;j<m;j++)
+        int x = 0;
+        for (int j = 0; j < m; j++)
         {
-            if(ar[i][j]=='U')
+            if (ar[i][j] == 'U')
             {
-                if(x%2==0)
+                if (x % 2 == 0)
                 {
-                    ar[i][j]='W';
-                    ar[i+1][j]='B';
+                    ar[i][j] = 'W';
+                    ar[i + 1][j] = 'B';
                 }
-                else 
+                else
                 {
-                    ar[i][j]='B';
-                    ar[i+1][j]='W';
+                    ar[i][j] = 'B';
+                    ar[i + 1][j] = 'W';
                 }
                 x++;
             }
         }
     }
-     for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-        int x=0,y=0;
-        for(int j=0;j<m;j++)
+        int x = 0, y = 0;
+        for (int j = 0; j < m; j++)
         {
-            if(ar[i][j]=='B')x++;
-            else if(ar[i][j]=='W') y++;
+            if (ar[i][j] == 'B')
+                x++;
+            else if (ar[i][j] == 'W')
+                y++;
         }
-        if(x!=y)
+        if (x != y)
         {
-            cout<<"-1"<<endl;
+            cout << "-1" << endl;
             return;
         }
     }
-    for(int j=0;j<m;j++)
+    for (int j = 0; j < m; j++)
     {
-        int x=0,y=0;
-        for(int i=0;i<n;i++)
+        int x = 0, y = 0;
+        for (int i = 0; i < n; i++)
         {
-            if(ar[i][j]=='B')x++;
-            else if(ar[i][j]=='W') y++;
+            if (ar[i][j] == 'B')
+                x++;
+            else if (ar[i][j] == 'W')
+                y++;
         }
-        if(x!=y)
+        if (x != y)
         {
-            cout<<"-1"<<endl;
+            cout << "-1" << endl;
             return;
         }
     }
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
-           cout<<ar[i][j];
-        cout<<endl;
+            cout << ar[i][j];
+        cout << endl;
     }
 }
 int main()
